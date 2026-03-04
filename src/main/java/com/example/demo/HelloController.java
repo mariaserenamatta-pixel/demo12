@@ -16,10 +16,11 @@ public class  HelloController {
     }
     @GetMapping("/api/goodmorning")
     public Map<String, Object> goodmorning() {
-        return Map.of(
-                "message", "GoodMorning dalla API Spring!",
-                "ok", true
-        );
+        return hello();
+        //return Map.of(
+               // "message", "GoodMorning dalla API Spring!",
+                //"ok", true
+        //);
     } 
     @GetMapping("/api/happyday")
     public Map<String, Object> happyday() {
