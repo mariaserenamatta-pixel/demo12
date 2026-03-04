@@ -21,10 +21,17 @@ public class  HelloController {
                 "ok", true
         );
     } 
-    @GetMapping("/api/happyday ")
-    public Map<String, Object>happyday() {
+    @GetMapping("/api/happyday")
+    public Map<String, Object> happyday() {
         return Map.of(
                 "message", "ThanK Giorgia !",
+                "ok", true
+        );
+    }
+    @GetMapping("api/ciao")
+    public Map<String, Object> ciao(){
+        return Map.of(
+                "message", "prova prova 1 2 3",
                 "ok", true
         );
     }
