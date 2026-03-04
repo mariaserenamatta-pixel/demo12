@@ -20,5 +20,12 @@ public class  HelloController {
                 "message", "GoodMorning dalla API Spring!",
                 "ok", true
         );
+    } 
+    @GetMapping("/api/happyday ")
+    public Map<String, Object>happyday() {
+        return Map.of(
+                "message", "ThanK Giorgia !",
+                "ok", true
+        );
     }
 }
